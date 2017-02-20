@@ -13,16 +13,6 @@
     tools:context="assignment2.testproject.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:text="Welcome to our test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-
     <Button
         android:text="Start test"
         android:layout_width="wrap_content"
@@ -30,7 +20,9 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
-        android:id="@+id/Button" />
+        android:id="@+id/Button"
+        android:onClick="buttonOnClick"
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -48,7 +40,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text"
+        android:inputType="number"
         android:ems="10"
         android:layout_below="@+id/name"
         android:layout_alignLeft="@+id/name"
@@ -56,4 +48,14 @@
         android:layout_marginTop="39dp"
         android:id="@+id/age"
         android:hint="Enter your age"/>
+
+    <TextView
+        android:text="Welcome to our test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="31dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
